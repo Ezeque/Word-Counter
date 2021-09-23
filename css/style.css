@@ -4,6 +4,12 @@ body{
 	justify-content: space-between;
 }
 
+h1{
+	color: #FFC069;
+	font-size: 5em;
+	font-family: 'Fredericka the Great', cursive;
+}
+
 #area-de-texto{
 	display: flex;
 	align-items: center;
@@ -22,6 +28,11 @@ body{
 	background-color: #A45D5D;
 }
 
+.formated-text{
+	color: #FFC069;
+	font-family: 'Poppins', sans-serif;
+}
+
 .center-area{
 	width: 80%;
 	align-items: left;
@@ -31,4 +42,8 @@ body{
 
 .center-area textarea{
 	height: 300px;
+	font-size: 1.1em;
+	font-family: lato;
+	font-weight: bold;
+	resize: none;
 }
