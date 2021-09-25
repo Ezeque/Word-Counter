@@ -39,6 +39,12 @@ $(document).ready(()=>{
 				})
 			} 
 			/* FIM LÓGICA CONTAGEM DE PALAVRAS*/
+
+			paragrafos = 0
+			console.log(texto.split("\n"))
+			texto.split("\n").map((e)=>{
+				paragrafos ++
+			})
 		}
 
 		$("#word-num").html(palavras)
