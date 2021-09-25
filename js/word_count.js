@@ -22,12 +22,23 @@ $(document).ready(()=>{
 			if(texto.split("")[texto.split("").length - 1] != " "){
 				letras = 0
 				texto.split("").map((e)=>{
-					if (e != " ") {
+					if (e != " " ) {
 						letras ++
 					}
 				})
 			}
 			/* FIM LÓGICA CONTAGEM DE LETRAS */
+
+			/* LÓGICA CONTAGEM DE PALAVRAS*/
+			if(texto.split("")[texto.split("").length - 1] != " "){
+				palavras = 0
+				texto.split(" ").map((e)=>{
+					if(e != ""){
+						palavras ++
+					}
+				})
+			} 
+			/* FIM LÓGICA CONTAGEM DE PALAVRAS*/
 		}
 
 		$("#word-num").html(palavras)
