@@ -47,3 +47,15 @@ h1{
 	font-weight: bold;
 	resize: none;
 }
+
+#button-area{
+	display: flex;
+	justify-content: space-between;
+}
+
+.text-transformation{
+	width: 30%;
+	height: 30px;
+	background-color: transparent;
+	border-radius: 50px;
+}
