@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Online Word Counter - Get Track of your text's number of Words, letters and paragraphs! </title>
+	<meta name="description" content="Here is an Online Word Counter wich you can use for free to know how long your text is gonna be.">
+	<meta name="author" content="Ezequiel Morais">
+	<meta name="keywords" content="text, word counter, text counter, letter counter, count words, paragraphs counter">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.rawgit.com/jprichardson/string.js/master/dist/string.min.js"></script>
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+</style>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<body>
+	<script src="../Libraries/voca.js" type="text/javascript">var v = require('voca');</script>
+	<script type="text/javascript" src="js/word_count.js"></script>
+	<script type="text/javascript" src="js/button_logic.js"></script>
+	<section id="area-de-texto">
+		<div class="center-area">
+			<span class="formated-text">Insert your text here:</span>
+			<textarea></textarea>
+			<div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+				<span class="formated-text">Words: <span class="formated-text" id="word-num"></span></span>
+				<span class="formated-text">Letters: <span class="formated-text" id="letter-num"></span></span>
+				<span class="formated-text">Paragraphs: <span class="formated-text" id="paragraph-num"></span></span>
+			</div>
+			<div id="button-area"><button class="text-transformation formated-text" id="capitalize">Captalize</button> <button class="text-transformation formated-text" id="copy">Copy to clipboard</button> 
+			</div>
+		</div>
+	</section>
+	<section id="area-de-titulo">
+		<div></div>
+		<div class="center-area flex-column" style="align-items: center; justify-content: space-between;">
+			<h1 style="margin: auto;">Word Counter</h1>
+		</div>
+		<div class="flex-column" style="width: 100%;">
+			<div class="formated-text" style="text-align: center";>You can also follow me here:</div>
+			<div id="social-media" class="flex-row">
+				<div><a href="https://github.com/Ezeque" target="_blank">
+					<img src="Sources/images/Logos/GitHub_Logo.png" width="100px">
+				</a></div>
+				<div><a href="https://www.linkedin.com/in/ezequielmorais/" target="_blank">
+					<img src="Sources/images/Logos/LI-Logo.png" height="37px">
+				</a></div>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>
