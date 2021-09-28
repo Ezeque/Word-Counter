@@ -5,6 +5,7 @@ $(document).ready(()=>{
 	let letras= 0
 	let paragrafos = 0
 	let spacenum = 0
+	let c_text
 
 	$("#word-num").html(palavras)
 	$("#letter-num").html(letras)
@@ -40,15 +41,17 @@ $(document).ready(()=>{
 			} 
 			/* FIM LÓGICA CONTAGEM DE PALAVRAS*/
 
+			/* LÓGICA CONTAGEM DE PARÁGRAFOS*/
 			paragrafos = 0
-			console.log(texto.split("\n"))
 			texto.split("\n").map((e)=>{
 				paragrafos ++
 			})
+			/* FIM LÓGICA CONTAGEM DE PARÁGRAFOS*/
 		}
 
 		$("#word-num").html(palavras)
 		$("#letter-num").html(letras)
 		$("#paragraph-num").html(paragrafos)
+
 	})
 })
