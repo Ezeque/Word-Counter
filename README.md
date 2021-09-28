@@ -1,0 +1,1 @@
+A simple tool to help you get track of your text's length
