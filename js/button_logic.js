@@ -24,4 +24,10 @@ $(document).ready(()=>{
 		}
 
 	})
+
+	$("#copy").click(()=>{
+		navigator.clipboard.writeText($("textarea").val());
+		$("#copy").html("Copied!")
+		setTimeout(()=>{$("#copy").html("Copy to clipboard")}, 1000)
+	})
 })

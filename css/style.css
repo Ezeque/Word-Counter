@@ -22,10 +22,11 @@ h1{
 #area-de-titulo{
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: space-evenly;
 	height: 100vh;
-	width: 50vw;
-	background-color: #A45D5D;
+	width: 50vw;		
+	background-image: url(../Sources/images/paper_bg.png);
 }
 
 .formated-text{
@@ -59,3 +60,20 @@ h1{
 	background-color: transparent;
 	border-radius: 50px;
 }
+
+.flex-column{
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-row{
+	display: flex;
+	flex-direction: row;
+}
+
+#social-media{
+	width: 100%;
+	margin-top: 3%;
+	justify-content: space-evenly;
+}
+

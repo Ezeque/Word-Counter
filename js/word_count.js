@@ -31,14 +31,9 @@ $(document).ready(()=>{
 			/* FIM LÓGICA CONTAGEM DE LETRAS */
 
 			/* LÓGICA CONTAGEM DE PALAVRAS*/
-			if(texto.split("")[texto.split("").length - 1] != " "){
-				palavras = 0
-				texto.split(" ").map((e)=>{
-					if(e != ""){
-						palavras ++
-					}
-				})
-			} 
+
+			palavras = v.countWords($("textarea").val())
+			
 			/* FIM LÓGICA CONTAGEM DE PALAVRAS*/
 
 			/* LÓGICA CONTAGEM DE PARÁGRAFOS*/
