@@ -20,14 +20,13 @@ $(document).ready(()=>{
 		}
 		else{
 			/* LÓGICA CONTAGEM DE LETRAS */
-			if(texto.split("")[texto.split("").length - 1] != " "){
-				letras = 0
-				texto.split("").map((e)=>{
-					if (e != " " ) {
-						letras ++
-					}
-				})
-			}
+			letras = 0
+			texto.split("").map((e)=>{
+				if (e != " " && e != "\n") {
+					letras ++
+				}
+			})
+			
 			/* FIM LÓGICA CONTAGEM DE LETRAS */
 
 			/* LÓGICA CONTAGEM DE PALAVRAS*/
