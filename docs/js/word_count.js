@@ -39,7 +39,12 @@ $(document).ready(()=>{
 			/* LÓGICA CONTAGEM DE PARÁGRAFOS*/
 			paragrafos = 0
 			texto.split("\n").map((e)=>{
-				paragrafos ++
+				if(v.isBlank(e) == true){
+					
+				}
+				else{
+					paragrafos ++
+				}
 			})
 			/* FIM LÓGICA CONTAGEM DE PARÁGRAFOS*/
 		}
